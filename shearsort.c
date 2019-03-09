@@ -3,13 +3,17 @@
 # include <stdlib.h>
 # include <math.h>
 
+// the number of rows & columns the 2D array has
 #define n 4
-#define ROW 0
-#define COL 1
 
+// the 2D array to be sorted
 int a[n][n];
 FILE *myFile;
+
+// number of times the sorting function has been called so far
 int phase = 0;
+
+// max number of times to run through the sorting function before the array has been sorted
 int max_phases;
 
 // the condition varaible
